@@ -8,6 +8,7 @@
 @txt3: #f39003;
 @form1: rgba(255,255,255,.2);
 @color1: rgba(128,128,128,.6);
+@color2: rgba(220,220,220,.6);
 
 /*Fonts*/
 @font-face {
@@ -87,6 +88,8 @@ footer to the page end
 
 html, body{
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body{
@@ -164,6 +167,7 @@ cart
   &-b{
     padding: 2rem;
     &-r{
+      border-bottom: 1px solid @color2;
       &-c{
         padding: 1rem;
         input{
@@ -196,10 +200,59 @@ order
 
 .os1{
   padding: 5rem 0;
+  form{
+    width: 400px;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    input{
+      margin: 1rem 0;
+    }
+    button{
+      padding: .5rem 2rem;
+    }
+  }
+}
+
+/*
+login
+*/
+
+.ls1{
+  padding: 5rem 0;
+  form{
+    width: 400px;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    input{
+      margin: 1rem 0;
+    }
+    button{
+      padding: .5rem 2rem;
+    }
+  }
+}
+
+/*
+categories
+*/
+
+.cas1{
+  padding: 5rem 1rem;
   &-b{
+    padding: 2rem;
     &-r{
+      border-bottom: 1px solid @color2;
       &-c{
         padding: 1rem;
+        input{
+          width: inherit;
+        }
       }
     }
   }

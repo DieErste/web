@@ -41,6 +41,8 @@ footer to the page end
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   background: #667db6;
@@ -93,6 +95,9 @@ cart
 .cs1-b {
   padding: 2rem;
 }
+.cs1-b-r {
+  border-bottom: 1px solid rgba(220, 220, 220, 0.6);
+}
 .cs1-b-r-c {
   padding: 1rem;
 }
@@ -114,6 +119,55 @@ order
 .os1 {
   padding: 5rem 0;
 }
-.os1-b-r-c {
+.os1 form {
+  width: 400px;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.os1 form input {
+  margin: 1rem 0;
+}
+.os1 form button {
+  padding: .5rem 2rem;
+}
+/*
+login
+*/
+.ls1 {
+  padding: 5rem 0;
+}
+.ls1 form {
+  width: 400px;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ls1 form input {
+  margin: 1rem 0;
+}
+.ls1 form button {
+  padding: .5rem 2rem;
+}
+/*
+categories
+*/
+.cas1 {
+  padding: 5rem 1rem;
+}
+.cas1-b {
+  padding: 2rem;
+}
+.cas1-b-r {
+  border-bottom: 1px solid rgba(220, 220, 220, 0.6);
+}
+.cas1-b-r-c {
   padding: 1rem;
+}
+.cas1-b-r-c input {
+  width: inherit;
 }
