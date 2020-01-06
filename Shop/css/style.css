@@ -63,6 +63,9 @@ custom
 .product {
   padding: 1rem;
 }
+.my-nav {
+  margin: .5rem 0;
+}
 /*
 main
 */
@@ -85,5 +88,32 @@ detail
 cart
 */
 .cs1 {
-  padding: 5rem;
+  padding: 0 1rem 5rem 1rem;
+}
+.cs1-b {
+  padding: 2rem;
+}
+.cs1-b-r-c {
+  padding: 1rem;
+}
+.cs1-b-r-c input {
+  width: inherit;
+}
+.cs2 {
+  padding: 5rem 1rem 1rem 1rem;
+}
+.cs2-b {
+  padding: 0;
+}
+/*
+order
+*/
+.order-wrap {
+  padding: 1rem;
+}
+.os1 {
+  padding: 5rem 0;
+}
+.os1-b-r-c {
+  padding: 1rem;
 }
