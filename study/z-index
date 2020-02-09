@@ -1,0 +1,17 @@
+.s12{
+ position: relative;
+ z-index: 2;
+ top: -330px;
+ &-b{
+  &-r{
+   &-c{
+    .h-c{
+     color: white;
+     background: black;
+     opacity: 0.7;
+     filter: alpha(Opacity=70);
+    }
+   }
+  }
+ }
+}

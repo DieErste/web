@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="icon" href="/src/img/favicon.ico">
+ <title>Starter Template · Bootstrap</title>
+ <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+ <!-- Bootstrap core CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link href="css/style.css" rel="stylesheet" type="text/css">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+ <!-- меню(прозрачное темное, налегает на заголовок) -->
+ 
+ <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm rounded-bottom s10">
+  <a class="navbar-brand cus-link cus-nav-title" href="index.html">VannMaster</a>
+  <button id="nav-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarMenu">
+   <ul class="navbar-nav ml-auto mt-5">
+    <li class="nav-item pl-5">
+     <button class="nav-link no-button cus-nav-link cus-link" onclick="scrollAction(1)">Виды услуг</button>
+    </li>
+    <li class="nav-item pl-5">
+     <button class="nav-link no-button cus-nav-link cus-link" onclick="scrollAction(2)">Как сделать заказ</button>
+    </li>
+    <li class="nav-item pl-5">
+     <button class="nav-link no-button cus-nav-link cus-link" onclick="scrollAction(3)">Контакты</button>
+    </li>
+    <li class="nav-item pl-5">
+     <a target="_blank" href="https://vk.com/stroyremont35" class="nav-link cus-link social">
+      <i class="fa fa-vk cus-icon" aria-hidden="true"></i>
+     </a>
+     <button class="nav-link cus-link social no-button ml-2 mr-2" onclick="scrollAction(3)">
+      <i class="fa fa-phone cus-icon" aria-hidden="true"></i>
+     </button>
+     <button class="nav-link cus-link social no-button" onclick="scrollAction(3)">
+      <i class="fa fa-envelope-o cus-icon" aria-hidden="true"></i>
+     </button>
+    </li>
+   </ul>
+  </div>
+ </nav>
+ 
+ <!-- full container -->
+ 
+ <div class="container border-light border-left border-right">
+ <div class="row">
+ <div class="col-12">
+   
+ <!-- заголовок -->
+ <header class="s11">
+  <div class="container s11-b">
+   <div class="row pt-5 pb-5 s11-b-r">
+    <div class="col-12 mb-5 bg-light pt-3 pb-3 rounded shadow-sm cus-border-left text-center s11-b-r-c">
+     <h1>Ремонт ванной, туалета, квартир Череповец</h1>
+     <h3>Услуги высокого качества и гарантия в короткие сроки</h3>
+    </div>
+    <div class="col-12 s11-b-r-c">
+     <img id="slider" class="rounded-top slider" src="img/header1.jpg">
+     <div class="p-2 bg-light rounded-bottom text-right slider-control">
+      <button id="slider-dot-1" class="social no-button cus-link dot-active cus-dot" onclick="changeImg(1)">
+       <i class="fa fa-circle" aria-hidden="true"></i>
+      </button>
+      <button id="slider-dot-2" class="social no-button cus-link dot-not-active cus-dot" onclick="changeImg(2)">
+       <i class="fa fa-circle" aria-hidden="true"></i>
+      </button>
+      <button id="slider-dot-3" class="social no-button cus-link dot-not-active cus-dot" onclick="changeImg(3)">
+       <i class="fa fa-circle" aria-hidden="true"></i>
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </header>
+ 
+ <!-- основной контент (виды услуг) -->
+ <main id="main" role="main" class="s12 mt-5 mb-5">
+  <div class="container s12-b">
+   <div class="row align-items-top s12-b-r">
+    <div class="col-12 col-lg-6 p-3 s12-b-r-c">
+     <div class="s12-content bg-light p-3 rounded shadow-sm cus-border-left">
+      <div class="row align-items-center">
+       <div class="col-3 text-center">
+        <i class="fa fa-bath" aria-hidden="true"></i>
+       </div>
+       <div class="col-9 text-left">
+        <h3>Ремонт ванной, туалета</h3>
+        <p>Выравнивание помещения, кладка плитки, установка сан-узла и всех необходимых комплектующих</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-12 col-lg-6 p-3 s12-b-r-c">
+     <div class="s12-content bg-light p-3 rounded shadow-sm cus-border-left">
+      <div class="row align-items-center">
+       <div class="col-3 text-center">
+        <i class="fa fa-home" aria-hidden="true"></i>
+       </div>
+       <div class="col-9 text-left">
+        <h3>Ремонт квартиры</h3>
+        <p>Выравнивание помещений, отделка, кладка плитки, подключение проводки, установка потолка, гарнитуров, дверей и всех необходимых комплектующих</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-12 col-lg-6 p-3 s12-b-r-c">
+     <div class="s12-content bg-light p-3 rounded shadow-sm cus-border-left">
+      <div class="row align-items-center">
+       <div class="col-3 text-center">
+        <i class="fa fa-bandcamp" aria-hidden="true"></i>
+       </div>
+       <div class="col-9 text-left">
+        <h3>Заказ материалов</h3>
+        <p>Доставка необходимого кол-ва расходуемых по цене поставщика</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-12 col-lg-6 p-3 s12-b-r-c">
+     <div class="s12-content bg-light p-3 rounded shadow-sm cus-border-left">
+      <div class="row align-items-center">
+       <div class="col-3 text-center">
+        <i class="fa fa-arrows-v" aria-hidden="true"></i>
+       </div>
+       <div class="col-9 text-left">
+        <h3>Бесплатный замер</h3>
+        <p>Оценка стоимости работы с выездом на дом</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-12 col-lg-6 p-3 s12-b-r-c">
+     <div class="s12-content bg-light p-3 rounded shadow-sm cus-border-left">
+      <div class="row align-items-center">
+       <div class="col-3 text-center">
+        <i class="fa fa-shield" aria-hidden="true"></i>
+       </div>
+       <div class="col-9 text-left">
+        <h3>Гарантия 3 года</h3>
+        <p>Качество и надежность сделанной работы</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-12 col-lg-6 p-3 s12-b-r-c">
+     <div class="s12-content bg-light p-3 rounded shadow-sm cus-border-left">
+      <div class="row align-items-center">
+       <div class="col-3 text-center">
+        <i class="fa fa-picture-o" aria-hidden="true"></i>
+       </div>
+       <div class="col-9 text-left">
+        <h3>Дизайн</h3>
+        <p>Предложение уникальных решений для каждого, а так же подбор материалов</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </main>
+   
+ <section id="order" class="s13 mt-5 mb-5">
+  <div class="container s13-b">
+   <div class="row s13-b-r">
+    <div class="col-12 offset-lg-2 col-lg-8 p-3 bg-light rounded shadow-sm cus-border-left s13-b-r-c">
+     <h3 class="mb-3 text-center">Оформление заказа</h3>
+     <ul>
+      <li>Консультация</li>
+      <li>Согласование необходимых работ и итоговой стоимости</li>
+      <li>Заключение договора</li>
+      <li>Заказ, подготовка материалов</li>
+      <li>Выполнение работы</li>
+      <li>Сдача результата</li>
+      <li>Ваша оценка выполненой работы в нашей группе вк</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </section>
+    
+ </div>
+ </div>
+ </div>
+
+ <footer id="footer" class="pb-2 pt-2 pl-3 pr-3 bg-light shadow-sm rounded-top s00">
+  <div class="row align-items-center pt-5 s00-r">
+   <div class="col-12 col-lg-6 s00-r-c">
+    <a target="_blank" href="https://vk.com/stroyremont35" class="cus-link cus-footer-link pt-1 pb-1">
+     <i class="fa fa-vk" aria-hidden="true"></i>
+     группа вконтакте
+    </a>
+    <p class="cus-link cus-footer-link mt-3">
+     <i class="fa fa-phone"></i>
+     +7900-123-45-67
+    </p>
+    <p class="cus-link cus-footer-link">
+     <i class="fa fa-envelope-o"></i>
+     asdfgh@gmail.com
+    </p>
+   </div>
+   <div class="col-12 col-lg-6 text-right s00-r-c">
+    <a class="navbar-brand mr-0 cus-link cus-nav-title" href="#">VannMaster</a>
+   </div>
+   <div class="col-12 text-center s00-r-c">
+    <p class="footer-text mt-3">© www.vannmaster.ru 2020, все права защищены</p>
+   </div>
+  </div>
+ </footer>
+ <!--
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ -->
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <script src="js/custom.js"></script>
+</body>
+</html>

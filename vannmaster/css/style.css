@@ -1,0 +1,146 @@
+/*Colors*/
+/*Fonts*/
+@font-face {
+  font-family: 'Museo500';
+  src: url('/fonts/MuseoSansCyrl-500.eot');
+  src: url('/fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'), url('/fonts/MuseoSansCyrl-500.woff2') format('woff2'), url('/fonts/MuseoSansCyrl-500.woff') format('woff'), url('/fonts/MuseoSansCyrl-500.ttf') format('truetype'), url('/fonts/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo700';
+  src: url('/fonts/MuseoSansCyrl-700.eot');
+  src: url('/fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), url('/fonts/MuseoSansCyrl-700.woff2') format('woff2'), url('/fonts/MuseoSansCyrl-700.woff') format('woff'), url('/fonts/MuseoSansCyrl-700.ttf') format('truetype'), url('/fonts/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo300';
+  src: url('/fonts/MuseoSansCyrl-300.eot');
+  src: url('/fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), url('/fonts/MuseoSansCyrl-300.woff2') format('woff2'), url('/fonts/MuseoSansCyrl-300.woff') format('woff'), url('/fonts/MuseoSansCyrl-300.ttf') format('truetype'), url('/fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo100';
+  src: url('/fonts/MuseoSansCyrl-100.eot');
+  src: url('/fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), url('/fonts/MuseoSansCyrl-100.woff2') format('woff2'), url('/fonts/MuseoSansCyrl-100.woff') format('woff'), url('/fonts/MuseoSansCyrl-100.ttf') format('truetype'), url('/fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo900';
+  src: url('/fonts/MuseoSansCyrl-900.eot');
+  src: url('/fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), url('/fonts/MuseoSansCyrl-900.woff2') format('woff2'), url('/fonts/MuseoSansCyrl-900.woff') format('woff'), url('/fonts/MuseoSansCyrl-900.ttf') format('truetype'), url('/fonts/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1100px;
+}
+h1 {
+  font-family: 'Museo700', sans-serif;
+}
+h3 {
+  font-family: 'Museo500', sans-serif;
+}
+p {
+  font-family: 'Museo300', sans-serif;
+}
+body {
+  background-image: url('/img/bg3.png');
+  background-position: center center;
+  background-size: cover;
+}
+.social {
+  display: inline;
+}
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.cus-icon {
+  font-size: 2rem !important;
+}
+.cus-link {
+  transition-duration: .5s;
+}
+.cus-border-left {
+  border-left: 5px solid #58c0f8;
+}
+.cus-nav-title {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9) !important;
+  font-family: 'Museo900', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.cus-nav-title:hover {
+  text-decoration: none;
+}
+.cus-nav-link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-family: 'Museo500', sans-serif;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #f8f9fa;
+  margin-bottom: .5rem;
+}
+.cus-nav-link:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9) !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-bottom: 5px solid #58c0f8;
+}
+.dot-not-active {
+  color: rgba(0, 0, 0, 0.5);
+}
+.dot-active {
+  color: rgba(0, 0, 0, 0.9);
+}
+.cus-dot:hover {
+  color: #58c0f8;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.cus-footer-link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-family: 'Museo500', sans-serif;
+  padding-left: 1rem;
+  border-left: 5px solid #f8f9fa;
+}
+.cus-footer-link:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9) !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-left: 5px solid #58c0f8;
+}
+.s11-b-r-c .slider {
+  width: 100%;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  box-shadow: -0.125rem -0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important;
+}
+.s11-b-r-c .slider-control {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.s12-b-r-c i {
+  font-size: 3rem;
+}
+.s00 {
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.s00-r-c .footer-text {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-family: 'Museo300', sans-serif;
+}

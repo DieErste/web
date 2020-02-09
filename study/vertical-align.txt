@@ -1,0 +1,2 @@
+родителю - display:flex
+наследнику - my-auto(bootstrap)/margin:auto
