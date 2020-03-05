@@ -1,4 +1,4 @@
-// slider
+/* slider */
 
 let dot_count = 3;
 let current_dot_num = 1;
@@ -42,7 +42,7 @@ function runSlider(){
 
 let sliderTimer = setInterval(() => runSlider(), 1000);
 
-// menu scrolls
+/* menu scrolls */
 
 let services = document.getElementById("main");
 let order = document.getElementById("order");
