@@ -1,0 +1,19 @@
+﻿@model ItemsViewModel
+<div class="row mt-1 mb-5">
+    @if(!String.IsNullOrEmpty(Model.currentCategory))
+    {
+        <h2>@Model.currentCategory</h2>
+    }
+    else
+    {
+        <h2>@Model.modelName</h2>
+    }
+</div>
+<div class="row mb-5">
+    @{
+        foreach (Item item in Model.items)
+        {
+            @Html.Partial("AllItems", item);
+        }
+    }
+</div>

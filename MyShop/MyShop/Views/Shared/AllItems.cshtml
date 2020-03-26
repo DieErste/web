@@ -1,0 +1,10 @@
+﻿@model Item
+
+<div class="col-lg-3 p-2 border">
+    <a class="text-dark" asp-controller="Items" asp-action="Index" asp-route-id="@Model.id">
+        <h6>@Model.name</h6>
+        <img class="img-thumbnail mb-1" src="@Model.img.path" alt="@Model.img.name" />
+        <p>Цена: @Model.price.ToString("c") / @Model.uom</p>
+    </a>
+    <a class="btn btn-warning float-left" asp-controller="ShopCart" asp-action="addToCart" asp-route-itemID="@Model.id">Добавить в корзину</a>
+</div>

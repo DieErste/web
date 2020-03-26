@@ -1,0 +1,66 @@
+﻿@model ItemEditViewModel
+
+<div class="row mt-1 mb-5">
+    <div class="col-9">
+        <h2>@Model.modelName</h2>
+    </div>
+    <div class="col-3">
+        <a class="btn btn-warning float-right" asp-controller="ImgManage" asp-action="Insert" target="_blank">@Model.imgBtnName</a>
+    </div>
+</div>
+
+<div class="validation" asp-validation-summary="ModelOnly"></div>
+
+<div class="row mb-5">
+    <form asp-action="Insert" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="item.name"></label>
+            <div class="col-12">
+                <input asp-for="item.name" class="form-control" />
+                <span asp-validation-for="item.name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="item.desc"></label>
+            <div class="col-12">
+                <input asp-for="item.desc" class="form-control" />
+                <span asp-validation-for="item.desc" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="item.price"></label>
+            <div class="col-12">
+                <input asp-for="item.price" class="form-control" />
+                <span asp-validation-for="item.price" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="item.uom"></label>
+            <div class="col-12">
+                <input asp-for="item.uom" class="form-control" />
+                <span asp-validation-for="item.uom" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" asp-for="item.favourite">
+            <label class="form-check-label" asp-for="item.favourite"></label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" asp-for="item.available">
+            <label class="form-check-label" asp-for="item.available"></label>
+        </div>
+        <div class="form-group">
+            <label asp-for="item.categoryID"></label>
+            <div class="col-12">
+                <select asp-for="item.categoryID" asp-items="@Model.categories"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="item.imgID"></label>
+            <div class="col-12">
+                <select asp-for="item.imgID" asp-items="@Model.imgs"></select>
+            </div>
+        </div>
+        <input class="btn btn-success" type="submit" value="@Model.btnName" />
+    </form>
+</div>

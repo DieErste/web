@@ -1,0 +1,55 @@
+﻿@model ShopCartViewModel
+
+<div class="validation" asp-validation-summary="ModelOnly"></div>
+
+<form class="mt-1 mb-5" asp-action="Index" method="post">
+    <div class="row mb-5">
+        <div class="col-9">
+            <h2>Корзина</h2>
+        </div>
+        <div class="col-3">
+            <input class="btn btn-success float-right" type="submit" value="Оплатить" />
+        </div>
+    </div>
+    
+    @if (Model.shopCartItems.Count == 0)
+    {
+        <div class="row alert alert-warning mt-3">
+            <p>В корзине нет товаров</p>
+        </div>
+    }
+    @for (int i = 0; i < Model.shopCartItems.Count; i++)
+    {
+        <div class="row alert alert-warning mt-3">
+            <div class="col-5">
+                <b>@Model.shopCartItems[i].item.name</b><br>
+            </div>
+            <div class="col-3">
+                <p><b>Цена: </b>@Model.shopCartItems[i].item.price.ToString("c") / @Model.shopCartItems[i].item.uom</p>
+            </div>
+            <div class="col-1">
+                <label asp-for="@Model.shopCartItems[i].quantity"></label>
+            </div>
+            <div class="col-1">
+                <input asp-for="@Model.shopCartItems[i].quantity" class="form-control" />
+                <span asp-validation-for="@Model.shopCartItems[i].quantity" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-danger float-right" asp-controller="ShopCart" asp-action="DeleteFromCart"
+                   asp-route-shopCartItemId="@Model.shopCartItems[i].id">Удалить</a>
+            </div>
+            <input type="hidden" asp-for="@Model.shopCartItems[i].id" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].price" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].shopCartID" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.id" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.price" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.name" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.uom" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.desc" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.favourite" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.available" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.categoryID" />
+            <input type="hidden" asp-for="@Model.shopCartItems[i].item.imgID" />
+        </div>
+    }
+</form>

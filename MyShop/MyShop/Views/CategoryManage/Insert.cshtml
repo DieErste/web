@@ -1,0 +1,22 @@
+﻿@model CategoryEditViewModel
+
+<div class="row mt-1 mb-5">
+    <div class="col-12">
+        <h2>@Model.modelName</h2>
+    </div>
+</div>
+
+<div class="validation" asp-validation-summary="ModelOnly"></div>
+
+<div class="row mb-5">
+    <form asp-action="Insert" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="category.name"></label>
+            <div class="col-12">
+                <input asp-for="category.name" class="form-control" />
+                <span asp-validation-for="category.name" class="text-danger"></span>
+            </div>
+        </div>
+        <input class="btn btn-success" type="submit" value="@Model.btnName" />
+    </form>
+</div>

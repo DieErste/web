@@ -1,0 +1,27 @@
+﻿@model ItemManageViewModel
+
+<div class="validation" asp-validation-summary="ModelOnly"></div>
+
+<div class="row mt-1 mb-5">
+    <div class="col-lg-9">
+        <h2>@Model.modelName</h2>
+    </div>
+    <div class="col-lg-3">
+        <a class="btn btn-success float-right" asp-controller="ItemManage" asp-action="Insert">Добавить</a>
+    </div>
+</div>
+
+<div class="row mb-5">
+    @{
+        foreach (var obj in Model.items)
+        {
+            <div class="col-lg-3 p-2 border">
+                <a class="text-dark" asp-controller="ItemManage" asp-action="Edit" asp-route-id="@obj.id">
+                    <h6>@obj.name</h6>
+                    <img class="img-thumbnail mb-1" src="@obj.img.path" alt="@obj.img.name" />
+                </a>
+                <a class="btn btn-danger float-right" asp-controller="ItemManage" asp-action="Delete" asp-route-id="@obj.id">Удалить</a>
+            </div>
+        }
+    }
+</div>
